@@ -24,7 +24,7 @@ public class DemoServiceImpl implements DemoService {
 		for (int i = 0; i < requestDto.getCantidad(); i++) {
 			idini = new Random().nextInt(requestDto.getLlaveId());
 			numComentario = new Random().nextInt(requestDto.getLlaveComentario());
-			list.add(new DemoDto(idini+1, idini, "comentario "+ numComentario));
+			list.add(new DemoDto(idini+1, idini, "correo"+ numComentario + "@prueba.com"));
 		}
 		return list;
 	}
@@ -40,10 +40,10 @@ public class DemoServiceImpl implements DemoService {
 //		for (int i = 0; i < 10; i++) {
 //			list.add(new DemoDto(idini+1, idini, "comentario "+ numComentario));
 //		}
-		list.add(new DemoDto(2, 1, "comentario 11"));
-		list.add(new DemoDto(4, 3, "comentario 12"));
-		list.add(new DemoDto(6, 5, "comentario 13"));
-		list.add(new DemoDto(8, 7, "comentario 14"));
+		list.add(new DemoDto(2, 1, "correo11@prueba.com"));
+		list.add(new DemoDto(4, 3, "correo11@prueba.com"));
+		list.add(new DemoDto(6, 5, "correo11@prueba.com"));
+		list.add(new DemoDto(8, 7, "correo11@prueba.com"));
 		
 		return list;
 	}
